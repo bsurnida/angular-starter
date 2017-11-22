@@ -19,3 +19,8 @@ switch (process.env.NODE_ENV) {
   default:
     module.exports = require('./config/webpack.dev')({env: 'development'});
 }
+
+entry: [
+    'webpack-dev-server/client?http://0.0.0.0:3000',
+     config.paths.demo
+ ]
